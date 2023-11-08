@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #002C39;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color:#FFFFFF;
+    margin: 150px 0 0 104px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 472px;
+    width: 1026px;
+    background-color: #3D5B60;
+    border-radius: 20px;
+
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FBC07B;
+}
+
+input{
+    background-color: #002C39;
+    color: #FFFFFF;
+    border-radius: 7px;
+    height: 35px;
+    width: 325px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    margin: 0 0 25px 0;
+}
+
+img{
+    /* background-image: url("/Images/Editar_foto.jpg"); */
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+}
+
