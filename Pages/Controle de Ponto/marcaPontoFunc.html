@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="marcaPontoFunc.css">
+</head>
+
+<body>
+    <main>
+        <h1>Bem-Vindo</h1>
+
+        <div class="linha_section">
+            <p>ligia.silva@access.com</p>
+            <p id="dataDiaSemana"></p>
+            <script>
+                // Função para obter o nome do dia da semana
+                function obterDiaSemana(numeroDia) {
+                    var diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+                    return diasSemana[numeroDia];
+                }
+
+                // Função para exibir a data e o dia da semana atual de forma dinâmica
+                function atualizarDataDiaSemana() {
+                    var dataDiv = document.getElementById("dataDiaSemana");
+                    var dataAtual = new Date();
+
+                    // Obtém os componentes da data
+                    var dia = dataAtual.getDate();
+                    var mes = dataAtual.getMonth() + 1; // Mês é base 0, então adicionamos 1
+                    var ano = dataAtual.getFullYear();
+                    var numeroDiaSemana = dataAtual.getDay(); // 0 = Domingo, 1 = Segunda-feira, ..., 6 = Sábado
+
+                    // Formata a data no formato dd/mm/aaaa
+                    var dataFormatada = dia + '/' + mes + '/' + ano;
+
+                    // Obtém o nome do dia da semana
+                    var nomeDiaSemana = obterDiaSemana(numeroDiaSemana);
+
+                    // Atualiza o conteúdo da div com a data e o dia da semana formatados
+                    dataDiv.innerHTML = nomeDiaSemana + "," + dataFormatada ;
+                }
+
+                // Chama a função para exibir a data e o dia da semana atual inicialmente
+                atualizarDataDiaSemana();
+
+                // Atualiza a data e o dia da semana a cada segundo (opcional, para manter dinâmico)
+                setInterval(atualizarDataDiaSemana, 1000);
+            </script>
+        </div>
+
+        <div class="container">
+
+            <div class="section_marcar">
+                <img src="logo.png" alt="Image Logo">
+
+                <div class="horas" id="relogio"></div>
+
+                <script>
+                    // JavaScript para exibir o horário com os segundos atualizados
+                    function atualizarRelogio() {
+                        var relogio = document.getElementById("relogio");
+                        var dataAtual = new Date();
+                        var horas = dataAtual.getHours();
+                        var minutos = dataAtual.getMinutes();
+                        var segundos = dataAtual.getSeconds();
+
+                        // Adiciona um zero à esquerda se for menor que 10 para manter o formato HH:MM:SS
+                        horas = (horas < 10) ? "0" + horas : horas;
+                        minutos = (minutos < 10) ? "0" + minutos : minutos;
+                        segundos = (segundos < 10) ? "0" + segundos : segundos;
+
+                        var horaFormatada = horas + ":" + minutos + ":" + segundos;
+                        relogio.innerHTML = horaFormatada;
+                    }
+
+                    // Atualiza o relógio a cada segundo
+                    setInterval(atualizarRelogio, 1000);
+
+                    // Inicializa o relógio
+                    atualizarRelogio();
+                </script>
+
+                <button type="submit" class="buttonPonto">
+                    Marcar Ponto
+                </button>
+            </div>
+
+
+            <div class="section_horas">
+                <h2>Horas Trabalhadas</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td data-label="Data">01/12/2023</td>
+                            <td data-label="Dia da Semana">Sexta-Feira</td>
+                            <td data-label="Horário">08:00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Data">30/11/2023</td>
+                            <td data-label="Dia da Semana">Quinta-Feira</td>
+                            <td data-label="Horário">18:00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Data">29/11/2023</td>
+                            <td data-label="Dia da Semana">Quarta-Feira</td>
+                            <td data-label="Horário">13:00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Data">28/12/2023</td>
+                            <td data-label="Dia da Semana">Terça-Feira</td>
+                            <td data-label="Horário">12:00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Data">27/12/2023</td>
+                            <td data-label="Dia da Semana">Quarta-Feira</td>
+                            <td data-label="Horário">8:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

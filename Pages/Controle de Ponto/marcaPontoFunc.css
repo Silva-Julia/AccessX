@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #002C39;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color:#FFFFFF;
+    margin: 150px 0 0 104px;
+}
+
+.linha_section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 104px;
+    width: 84%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color:#FBE0C0;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 102px;
+}
+
+.section_marcar{
+    background-color: #3D5B60;
+    height:522px;
+    width: 487px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 139px;
+    width: 119px;
+    padding-top:35px;
+}
+
+.horas{
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    color:#FFFFFF;
+    padding: 84px 0 84px;
+}
+
+
+button {
+    background-color: #FFAF50;
+    height: 44px;
+    width: 186px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.section_horas{
+    background-color: #3D5B60;
+    height: 522px;
+    width: 487px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color:#FFFFFF;
+    padding-top: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+    width: 90%;
+    table-layout: fixed;
+    font-family: 'Inter', sans-serif;
+    margin-top: 40px;
+    height: 70%;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    padding: .35em;
+    color: #FFFFFF;
+    border-bottom: 1px solid #000000;
+    font-size: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    height:80px;
+    font-size: 28px;
+    letter-spacing: .1em;
+    background-color: #3D5B60;
+  }
