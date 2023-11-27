@@ -12,6 +12,7 @@ body {
   background-color: #002C39;
 }
 
+
 .container {
   width: 500px;
   margin: 0 auto;
@@ -21,10 +22,6 @@ body {
 
 .header {
   text-align: center;
-}
-
-.logo {
-  width: 200px;
 }
 
 .form {
@@ -73,4 +70,7 @@ background: #FFAF50;
 
 .btn-cadastro {
   margin-top: 10px;
+
+
+  
 }
