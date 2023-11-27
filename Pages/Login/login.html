@@ -1,29 +1,23 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Página de Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
   <div class="container">
-    <div class="logo">
+    <div class="header">
       <img src="https://i.imgur.com/885034Q.png" alt="Logo do ACCESSX">
     </div>
     <div class="form">
       <form action="/login" method="post">
-        <input type="text" name="cpf" placeholder="CPF">
-        <input type="password" name="senha" placeholder="Senha">
-        <button type="submit">Acessar</button>
+        <input type="text" name="cpf" class="input-cpf" placeholder="CPF">
+        <input type="password" name="senha" class="input-senha" placeholder="Senha">
+        <button type="submit" class="btn-acessar">Acessar</button>
         <button class="btn-cadastro" type="button">Criar login</button>
       </form>
     </div>
-    <div class="footer">
-      <a href="#">Ainda não possui conta? Clique aqui</a>
-    </div>
   </div>
-  
 </body>
 </html>
-
