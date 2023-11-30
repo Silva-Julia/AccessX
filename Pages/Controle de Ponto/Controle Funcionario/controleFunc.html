@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Funcionario</title>
+  <link rel="stylesheet" href="controleFunc.css">
+</head>
+
+<body>
+  <main>
+
+    <h1>Controle de Pontos</h1>
+
+    <div class="container">
+
+      <section class="section_photo">
+        <img src="funcionario.png" alt="Foto Funcionario" />
+          <input type="text" placeholder="Marcos Mendes">
+          <input type="text" placeholder="Administrativo">
+          <input type="text" placeholder="Gestor Administrativo">
+          <button type="submit" class="buttonPonto"> Editar</button>
+      </section>
+
+        <table>
+          <thead>
+            <tr class="section">
+              <th scope="col">Data</th>
+              <th scope="col">Tipo de Registro</th>
+              <th scope="col">Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Data">29/07/2023</td>
+              <td data-label="Tipo de Registro">Inicio da Jornada</td>
+              <td data-label="Horário">08:00</td>
+  
+            </tr>
+            <tr>
+              <td scope="row" data-label="Data">28/07/2023</td>
+              <td data-label="Tipo de Registro">Fim da Jornada</td>
+              <td data-label="Horário">18:00</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Data">28/07/2023</td>
+              <td data-label="Tipo de Registro">Fim do Intervalo</td>
+              <td data-label="Horário">13:00</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Data">28/07/2023</td>
+              <td data-label="Tipo de Registro">Inicio do Intervalo</td>
+              <td data-label="Horário">12:00</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Data">28/07/2023</td>
+              <td data-label="Tipo de Registro">Inicio da Jornada</td>
+              <td data-label="Horário">07:58</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
